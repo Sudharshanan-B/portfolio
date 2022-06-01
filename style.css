@@ -6,17 +6,28 @@
     text-decoration: none;
 }
 .max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin:auto;
+    max-width: 1500px;
+    padding : 0 30px;
+    margin : auto;
 }
+
+/* navbar styling */
+
 .navbar{
     position: fixed;
     width:100%;
-    padding: 15px 0 ;
-    background-color: crimson;
+    padding: 30px 0 ;
+    /* background-color: rgb(220, 20, 87); */
+    transition: all 0.3s ease;
     font-family: 'Ubuntu' , sans-serif;
 }
+
+
+.scroll {
+    padding : 15px 0;
+    background-color: crimson;
+  }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -27,14 +38,80 @@
     font-size: 35px;
     font-weight: 600;
 }
+
+
+.navbar .logo a span{
+    color : crimson
+}
+
+.scroll .logo a span{
+    color:#fff;
+    transition: all 0.3s ease;
+}
 .navbar .menu li{
     list-style: none;
-    display: inline-block ;
+    display : inline-block;
 }
 
 .navbar .menu li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 30px;
+    transition: 0.3s ease;
 }
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.scroll .menu li a:hover{
+    color: crimson;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display:flex;  
+}
+
+
+.home{
+    display : flex;
+    background : url("images/banner.jpg") no-repeat center; 
+    background-size: cover;
+    height:100vh;
+    color:#fff;
+    min-height:500px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.home .max-width{
+    margin:auto 0 auto 40px;
+
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size : 40px;
+    margin: 5px 0; 
+}
+
+.home .home-content .text-3 span{
+    font-weight: 500;
+    color: crimson;
+}
+
