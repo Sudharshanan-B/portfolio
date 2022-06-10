@@ -8,3 +8,11 @@ window.onscroll = function() {
     myNav.classList.remove("scroll");
   }
 };
+
+const menuIcon = document.querySelector('.fas');
+menuIcon.addEventListener('click', toggle_navbar);
+
+function toggle_navbar() {
+  const menuItem = document.querySelector('.menu');
+  menuItem.classList.toggle('active');
+}
